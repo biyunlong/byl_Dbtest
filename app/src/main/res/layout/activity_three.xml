@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="80px"
+            android:background="#6699ff"
+            android:gravity="center"
+            android:text="Demo合集"
+            android:textColor="#808080" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                style="@style/name_value_button"
+                android:text="姓名" />
+
+            <EditText
+                android:id="@+id/et1"
+                style="@style/name_value_editext" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                style="@style/name_value_button"
+                android:text="年龄" />
+
+            <EditText style="@style/name_value_editext"
+                android:id="@+id/et2"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                style="@style/name_value_button"
+                android:text="学校" />
+
+            <EditText style="@style/name_value_editext"
+                android:id="@+id/et3"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                style="@style/name_value_button"
+                android:text="ID" />
+
+            <EditText style="@style/name_value_editext"
+                android:id="@+id/et4"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50px">
+
+            <TextView
+                style="@style/name_value_button"
+                android:text="查询条件" />
+
+            <EditText style="@style/name_value_editext"
+                android:id="@+id/et5"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120px"
+            android:layout_marginTop="50px"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/bt1"
+                style="@style/button_style"
+                android:text="按姓名查找" />
+
+            <Button
+                android:id="@+id/bt2"
+                style="@style/button_style"
+                android:text="全部查找" />
+
+            <Button
+                android:id="@+id/bt3"
+                style="@style/button_style"
+                android:text="按ID查找" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120px"
+            android:layout_marginTop="10px"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/bt4"
+                style="@style/button_style"
+                android:text="新增" />
+
+            <Button
+                android:id="@+id/bt5"
+                style="@style/button_style"
+                android:text="删除" />
+
+            <Button
+                android:id="@+id/bt6"
+                style="@style/button_style"
+                android:text="修改" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:layout_width="200px"
+                android:layout_height="100px"
+                android:layout_marginLeft="10px"
+                android:layout_marginTop="200px"
+                android:text="查询结果"/>
+            <TextView
+                android:id="@+id/tv"
+                android:layout_width="500px"
+                android:layout_height="500px"
+                android:layout_marginLeft="10px"
+                android:layout_marginBottom="30px"
+                android:background="@drawable/select_valueshap"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>
